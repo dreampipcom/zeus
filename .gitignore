@@ -1,0 +1,4 @@
+.env
+**/any-sync-*/*.yml
+etc/**/*.yml
+defaultTemplate.yml
