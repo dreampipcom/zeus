@@ -5,6 +5,8 @@ What: any-sync
 ## Getting Started
 
 ```
+chmod +x ./init.sh
+./init.sh
 ```
 
 Documentation: TBD
