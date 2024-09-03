@@ -2,3 +2,5 @@
 **/any-sync-*/*.yml
 etc/**/*.yml
 defaultTemplate.yml
+_*/
+.DS_Store

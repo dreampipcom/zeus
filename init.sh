@@ -1,7 +1,7 @@
 #!/bin/bash
-
-# CLICOLOR=1
+# init.sh
 echo -e "\033[0;62m\033[0;49;35m"
+set -a && source .env && set +a
 
 # installing Go if need be
 if [ "$(which go)" == "" ]; then
@@ -39,7 +39,6 @@ fi
 
 # prepare config
 echo "dp::zeus::(busy)::preparing Zeus configuration files."
-source ./.env
 origin="_defaultTemplate.yml"
 destination="defaultTemplate.yml"
 tmpfile=$(mktemp)
