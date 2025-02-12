@@ -3,4 +3,5 @@
 etc/**/*.yml
 defaultTemplate.yml
 _*/
+siyuan/
 .DS_Store

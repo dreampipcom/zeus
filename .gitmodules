@@ -1,0 +1,3 @@
+[submodule "siyuan"]
+	path = siyuan
+	url = git@github.com:dreampipcom/__external.siyuan.git
