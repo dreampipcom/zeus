@@ -1,8 +1,8 @@
 version: "3.9"
 services:
   main:
-    build: ./siyuan
-    command: ['--workspace=/siyuan/workspace/', '--accessAuthCode=${AuthCode}']
+    build: ./__external.siyuan
+    command: ['--workspace=/siyuan/workspace/', '--accessAuthCode=${ZEUS_SIYUAN_AUTH_CODE}']
     ports:
       - 6806:6806
     volumes:
@@ -10,6 +10,6 @@ services:
     restart: unless-stopped
     environment:
       # A list of time zone identifiers can be found at https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-      - TZ=${YOUR_TIME_ZONE}
-      - PUID=${YOUR_USER_PUID}  # Customize user ID
-      - PGID=${YOUR_USER_PGID}  # Customize group ID
+      - TZ=${ZEUS_TIMEZONE}
+      - PUID=${ZEUS_PUID}  # Customize user ID
+      - PGID=${ZEUS_PGID}  # Customize group ID

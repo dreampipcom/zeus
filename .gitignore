@@ -6,3 +6,4 @@ _*/
 siyuan/
 .DS_Store
 workspace/
+docker-compose.yml
