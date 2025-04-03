@@ -2,7 +2,7 @@ version: "3.9"
 services:
   main:
     build: ./__external.siyuan
-    command: ['--workspace=/siyuan/workspace/', '--accessAuthCode=${ZEUS_SIYUAN_AUTH_CODE}']
+    command: ['--workspace=/siyuan/workspace/', '--accessAuthCode=${ZEUS_AUTH_CODE}']
     ports:
       - 6806:6806
     volumes:
